@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "jira": {
+      "type": "http",
+      "url": "${JIRA_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer ${JIRA_API_TOKEN}"
+      }
+    },
+    "confluence": {
+      "type": "http",
+      "url": "${CONFLUENCE_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer ${CONFLUENCE_API_TOKEN}"
+      }
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${GITHUB_PAT}"
+      }
+    }
+  }
+}
